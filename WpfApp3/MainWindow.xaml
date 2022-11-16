@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        xmlns:lib="clr-namespace:WpfLibrary1;assembly=WpfLibrary1"
+        xmlns:fs="clr-namespace:FsLibrary1;assembly=FsLibrary1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="SameAssemblyCommand" Command="local:CustomCommands.SameAssemblyCommand" HorizontalAlignment="Left" Margin="280,171,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.909,-2.677"/>
+        <Button Content="DifferentAssemblyCommand" Command="lib:CustomCommands.DifferentAssemblyCommand" HorizontalAlignment="Left" Margin="280,230,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.909,-2.677"/>
+        <Button Content="FsAssemblyCommand" Command="fs:CustomCommands.FsAssemblyCommand" HorizontalAlignment="Left" Margin="280,292,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.909,-2.677"/>
+
+    </Grid>
+</Window>
